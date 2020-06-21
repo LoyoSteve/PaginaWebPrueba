@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+    --colorBase: #3A4B90;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*header*/
+
+header {
+    background: var(--colorBase);
+}
+
+.contentheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagenh {
+    width: 300px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.menu a {
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    transition: 0.5s;
+    background: #8e9fe6;
+    color: black;
+    border: solid;
+    border-width: 1px;
+}
+
+/*wave*/
+
+.wave {
+    position: relative;
+}
+
+.waves {
+    position: absolute;
+}
+
+/*pagina de registro*/
+
+.formulario {
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+    margin: 20px auto 40px auto;
+    background: whitesmoke;
+    border-radius: 4px;
+    padding: 40px 60px;
+    -webkit-box-shadow: 3px 17px 21px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 17px 21px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 17px 21px -6px rgba(0, 0, 0, 0.75);
+}
+
+.formulario img {
+    width: 200px;
+    margin: 30px auto 30px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+    background: transparent;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+}
+label{
+    width: 80%;
+    margin: 0 auto 10px auto;
+}
+
+/*botones*/
+.botones{
+    display: flex;
+}
+.btn{
+    background: var(--colorBase);
+    width: 100px;
+    margin: auto;
+    border-radius: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 0;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    background: #8e9fe6;
+    color: black;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    background: var(--colorBase);
+}
+.conteninfo{
+    background: var(--colorBase);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
